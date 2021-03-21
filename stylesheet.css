@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-color: rgb(116, 116, 116);
+    background-color: rgb(230, 230, 230);
     margin: 0;
     padding: 0;
     height: 100%;
@@ -24,32 +24,40 @@ header {
     align-items: center;
     height: 64px;
     width: 100%;
-    background-color: rgb(19, 37, 54);
+    background-color: rgb(41, 103, 161);
     padding-left: 20px;
-    color: white; 
+    color: white;
 }
 header h1 {
     width: 100%;
-    font-size: 20px;
-    font-family: 'arial';
+    font-size: 38px;
+    font-family: 'Exo 2', sans-serif;
     text-align: center;
 }
 
 .side-bar{
-    background-color: rgb(19, 37, 54);
-    width: 200px;
-    margin-top: 10px;
-    border-radius: 0 5px 0 0;
+    background-color: rgb(41, 103, 161);
+    width: 128px;
+    margin: 10px 10px 10px 0;
+    border-radius: 0 5px 5px 0;
 }
 
-.side-bar ul {
-    padding-left: 20px;
-    float: left;
+.nav {
+    margin: 10px 0;
+    flex-direction: column;
 }
 
-.side-bar li {
-    list-style: none;
-    padding: 5px 0;
+.btn {
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    display: block;
+    margin: 0;
+    padding: 10px 10px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .side-bar a {
@@ -57,14 +65,28 @@ header h1 {
     font-size: 18px;
 }
 
+.main {
+    background-color: white;
+    flex: 1;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+}
+
 .card {
     background-color: rgba(255, 255, 255, 0.8);
-    -webkit-flex: 1;
+    flex-direction: column;
+    width: 512px;
     font-family: 'Georgia';
     margin: 10px;
     border: 1px solid rgb(143, 143, 143);
-    padding-left: 20px;
+    padding: 0 20px;
     border-radius: 5px;
+}
+
+.card iframe {
+    width: 100%;
+    height: 200px;
+    border: 0;
 }
 
 .image {
