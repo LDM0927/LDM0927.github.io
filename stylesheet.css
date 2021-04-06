@@ -33,6 +33,17 @@ header {
     padding-left: 20px;
     color: white;
 }
+
+header p {
+    display: none;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 38px;
+    padding: 21px 0;
+}
+
 header h1 {
     width: 100%;
     font-size: 38px;
