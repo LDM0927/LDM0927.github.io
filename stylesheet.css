@@ -36,11 +36,11 @@ header {
 
 header p {
     display: none;
+    font-size: 38px;
 }
 
 .menu-icon {
     color: white;
-    font-size: 38px;
     padding: 21px 0;
 }
 
