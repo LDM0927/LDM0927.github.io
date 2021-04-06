@@ -17,6 +17,9 @@
 
     header p {
         display: block;
-        font-size: 32px;
     }
+
+    header h1 {
+        font-size: 32px;
+    }    
 }
