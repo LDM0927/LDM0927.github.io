@@ -1,25 +1,44 @@
-@media(max-width: 1060px) {
+@media(max-width: 1048px) {
+    .main-bg {
+        flex: 1;
+        margin: 0 10px;
+        padding: 0;
+    }
 
+    .main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
 
-@media(max-width: 670px) {
+@media(max-width: 710px) {
     .side-bar{
         display: none;
         margin: 0;
     }
 
-    .main {
-        background-color: white;
+    .main-bg {
         flex: 1;
+    }
+
+    .main {
         margin: 0;
-        padding: 0;
     }
 
     header p {
-        display: block;
+        display: inline-block;
     }
 
     header h1 {
         font-size: 32px;
-    }    
+    }
+
+    .post-left {
+        width: 100%;
+    }
+
+    .post-right {
+        display: none;
+    }
 }
