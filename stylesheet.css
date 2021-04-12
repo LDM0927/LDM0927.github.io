@@ -18,40 +18,67 @@ p {
     margin: 0;
 }
 
+/* Header */
+    header {
+        display: -webkit-flex;
+        z-index: 10;
+        position: fixed;
+        align-items: center;
+        height: 64px;
+        width: 100%;
+        background-color: rgb(41, 103, 161);
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    input[type="checkbox"] {
+        position: absolute;
+        left: -50vw;
+    }
+
+    .open, .close {
+        display: none;
+    }
+
+    /* Header Title */
+        header h1 {
+            width: 100%;
+            font-size: 38px;
+            font-family: 'Exo 2', sans-serif;
+            text-align: center;
+        }
+
+    /*  */
+    .bar {
+        display: none;
+        background-color: rgb(82, 82, 82);
+        position: absolute;
+        top: 64px;
+        left: 0;
+        z-index: 10;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .bar a {
+        color: white;
+    }
+
+/* main */
 main {
-    height: calc(100vh - 84px);
     display: -webkit-flex;
-}
-
-header {
-    display: -webkit-flex;
-    align-items: center;
-    height: 64px;
-    width: 100%;
-    background-color: rgb(41, 103, 161);
-    padding-left: 20px;
-    color: white;
-}
-
-header p {
-    display: none;
-    font-size: 28px;
-}
-
-.menu-icon {
-    color: white;
-    padding: 21px 0;
-}
-
-header h1 {
-    width: 100%;
-    font-size: 38px;
-    font-family: 'Exo 2', sans-serif;
-    text-align: center;
+    flex-direction: row;
+    flex: 1;
+    position: absolute;
+    top: 64px;
 }
 
 .side-bar{
     background-color: rgb(41, 103, 161);
+    z-index: 10;
+    position: fixed;
+    top: 64px;
     width: 128px;
     height: calc(100vh - 84px);
     margin: 10px 0;
@@ -82,14 +109,17 @@ header h1 {
 }
 
 .main-bg {
-    margin: 0 auto;
+    position: absolute;
+    left: 128px;
+    width: calc(100vw - 143px);
 }
 
 .main {
+    z-index: -10;
     background-color: white;
     width: 900px;
     min-height: calc(100vh - 64px);
-    margin: 0;
+    margin: 0 auto;
     padding: 0 0 10px 0;
 }
 
