@@ -111,7 +111,7 @@ main {
 .main-bg {
     position: absolute;
     left: 128px;
-    width: calc(100vw - 143px);
+    width: calc(100vw - 128px);
 }
 
 .main {

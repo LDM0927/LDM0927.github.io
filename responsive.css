@@ -1,12 +1,12 @@
 @media(max-width: 1048px) {
     .main-bg {
-        width: calc(100vw - 153px);
+        width: calc(100vw - 148px);
         margin: 0 10px;
         padding: 0;
     }
 
     .main {
-        width: calc(100vw - 163px);
+        width: calc(100vw - 148px);
         margin: 0;
     }
 }
@@ -46,7 +46,7 @@
 
     .main-bg {
         left: 0;
-        width: calc(100vw - 35px);
+        width: calc(100vw - 20px);
     }
 
     .main {
