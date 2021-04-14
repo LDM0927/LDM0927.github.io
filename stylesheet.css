@@ -110,6 +110,7 @@ main {
 
 .main-bg {
     position: absolute;
+    top: 0;
     left: 128px;
     width: calc(100vw - 128px);
 }
@@ -190,9 +191,8 @@ main {
 .card {
     background-color: rgba(255, 255, 255, 0.8);
     flex-direction: column;
-    width: 900px;
     font-family: 'Exo 2', sans-serif;
-    margin: 10px auto;
+    margin: 10px;
     border: 1px solid rgb(143, 143, 143);
     padding: 0 20px;
     border-radius: 5px;
