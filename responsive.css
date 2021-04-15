@@ -1,38 +1,26 @@
-/* @media(max-width: 1048px) {
-    .main-bg {
-        width: calc(100vw - 148px);
-        margin: 0 10px;
-        padding: 0;
-    }
+@media(max-width: 1048px) {
 
-    .main {
-        width: calc(100vw - 148px);
-        margin: 0;
-    }
-} */
+}
 
 @media(max-width: 710px) {
 
     /* Header */
     .open {
         display: block;
-        margin: 0 20px;
         font-size: 28px;
     }
     
-    input[type="checkbox"]:checked ~ .open {
+    input[type="checkbox"]:checked ~ .header-btn .open {
         display: none;
     }
 
-    input[type="checkbox"]:checked ~ .close {
+    input[type="checkbox"]:checked ~ .header-btn .close {
         display: block;
-        margin: 0 20px;
-        padding: 0 1px;
         font-size: 32px;
     }
 
-    header h1 {
-        font-size: 32px;
+    .header-title h1 {
+        font-size: 4.5vw;
     }
     
     input[type="checkbox"]:checked ~ .bar {
