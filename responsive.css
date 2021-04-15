@@ -1,4 +1,4 @@
-@media(max-width: 1048px) {
+/* @media(max-width: 1048px) {
     .main-bg {
         width: calc(100vw - 148px);
         margin: 0 10px;
@@ -9,7 +9,7 @@
         width: calc(100vw - 148px);
         margin: 0;
     }
-}
+} */
 
 @media(max-width: 710px) {
 

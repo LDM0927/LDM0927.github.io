@@ -22,10 +22,9 @@ p {
     header {
         display: -webkit-flex;
         z-index: 10;
-        position: fixed;
         align-items: center;
         height: 64px;
-        width: 100%;
+        flex: 1;
         background-color: rgb(41, 103, 161);
         margin: 0;
         padding: 0;
@@ -70,17 +69,14 @@ main {
     display: -webkit-flex;
     flex-direction: row;
     flex: 1;
-    position: absolute;
-    top: 64px;
+    height: calc(100vh - 64px);
 }
 
 .side-bar{
     background-color: rgb(41, 103, 161);
     z-index: 10;
-    position: fixed;
-    top: 64px;
     width: 128px;
-    height: calc(100vh - 84px);
+    /* height: calc(100vh - 84px); */
     margin: 10px 0;
     border-radius: 0 5px 5px 0;
 }
@@ -88,6 +84,7 @@ main {
 .nav {
     margin: 10px 0;
     flex-direction: column;
+    flex: 1;
 }
 
 .btn {
@@ -109,18 +106,20 @@ main {
 }
 
 .main-bg {
-    position: absolute;
-    top: 0;
-    left: 128px;
-    width: calc(100vw - 128px);
+    display: -webkit-flex;
+    flex: 1;
+    justify-content: center;
+    overflow-y: scroll;
 }
 
 .main {
+    position: relative;
+    flex-direction: column;
     z-index: -10;
     background-color: white;
-    width: 900px;
-    min-height: calc(100vh - 64px);
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 0 10px;
+    height: max-content;
     padding: 0 0 10px 0;
 }
 
