@@ -34,11 +34,10 @@
 
     .main-bg {
         left: 0;
-        width: calc(100vw - 20px);
     }
 
     .main {
-        width: 100%;
+        flex: 1;
     }
 
     .post-left {
