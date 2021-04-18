@@ -1,5 +1,16 @@
-@media(max-width: 1048px) {
+@media(max-width: 850px) {
+    .card {
+        flex-direction: column;
+    }
+    
+    .card-info p {
+        text-align: end;
+        justify-content: flex-end;
+    }
 
+    .map {
+        border-radius: 0 0 5px 5px;
+    }
 }
 
 @media(max-width: 690px) {
